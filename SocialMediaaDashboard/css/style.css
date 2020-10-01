@@ -1,0 +1,158 @@
+* {
+  font-family: 'Inter',sans-serif;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(225,100%,98%);
+  width: 100%;
+  height: 230px;
+}
+/* hsl(225, 100%, 98%) */
+.bold {
+  font-weight: bolder;
+}
+.text-edit {
+  font-weight: bolder;
+  font-size: 15px;
+  color: hsl(228, 34%, 66%);
+}
+.bolder {
+  font-weight: bolder;
+  opacity: 0.8;
+}
+/* Button edit */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 32px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-30px);
+  background-color: rgb(0, 0, 53);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Toggle end */
+@media screen and (max-width: 768px){
+  .block {
+    display: block;
+    float: right;
+  }
+  .border-line {
+    border-top: 2px solid gray;   
+  }
+  .overlay {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 312px){
+  .overlay {
+    height: 500px;
+  }
+}
+
+/* Section 1 ends */
+
+/* Section 2 start */
+.text-color {
+  color: rgb(122, 122, 122);
+}
+.grey-effect {
+  color: grey;
+  letter-spacing: 2px;
+}
+.top-1 {
+  border-top: 3px solid hsl(208, 92%, 53%);
+  border-radius: 3px;
+}
+.top-2 {
+  border-top: 3px solid hsl(203, 89%, 53%);
+  border-radius: 3px;
+}
+.top-3 {
+  border-top: 3px solid;
+  border-radius: 3px;
+  border-image-source: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+  border-image-slice: 1;
+}
+.top-4 {
+  border-radius: 3px;
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+.top-row {
+  width: 275px;
+  border: none;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 20px;
+}
+.top-row:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  border: none;
+
+}
+/* Section 2 ended */
+
+/* section 3 start */
+.text-grey {
+  color: hsl(228, 34%, 66%);
+}
+.bottom-row {
+  width: 275px;
+  margin-bottom: 12px;
+  background-color: honeydew;
+  border: none;
+}
+.bottom-row:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
